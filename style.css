@@ -1,0 +1,100 @@
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+} 
+body{
+   width: 100vw;
+   height: 100vw;
+   overflow-x: hidden;
+   overflow-y: auto;
+}  
+
+.container{
+   width: 80%;
+   margin:20px auto;
+   display: grid;
+   grid-template-columns: repeat(3,300px);
+   grid-template-rows: repeat(6,100px);
+   gap: 30px;
+   
+} 
+.box1{
+ 
+  /* padding: 20px; */
+
+  background-color: rgb(107, 107, 236);
+
+} 
+.box2{
+  padding: 20px;
+   background-color: rgb(160, 156, 156);
+   grid-column-start: 2;
+   grid-column-end: 4;
+} 
+.box3{ 
+   background-color: gray;
+   padding: 20px;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start: 2;
+   grid-row-end: 4;
+} 
+.box4{
+   background-color: rgb(124, 218, 186);
+   padding: 20px;
+   grid-row-start: 4;
+   grid-row-end: 6;
+
+} 
+.box5{
+  background-color:rgb(124, 218, 186);
+  padding: 20px;
+  grid-row-start: 4;
+  grid-row-end: 6; 
+} 
+.box6{
+  background-color: rgb(124, 218, 186);
+  padding: 20px;
+  grid-row-start: 4;
+  grid-row-end: 6;
+} 
+.box7{
+   background-color: gray;
+   padding: 20px;
+   grid-column-start: 1;
+   grid-column-end: 4;
+   grid-row-start:6;
+   grid-row-end: 9;
+} 
+
+/* small divices */
+@media(min-width: 320px) and (max-width: 480px)
+{
+  .container{
+     background-color:chocolate;
+     /* width: 400px; */
+     display: grid;
+     grid-template-columns: repeat(1,50px);
+     grid-template-rows: repeat(6,50px);
+  }  
+}  
+ /* mediam devices */
+@media(min-width: 600px) and (max-width: 786px)
+{
+  .container{
+    /* width: 700px; */
+     background-color: chartreuse;
+     grid-template-columns: repeat(1,50px);
+     grid-template-rows: repeat(6,1fr);
+  }
+} 
+
+ /* lage devices */
+@media (min-width: 900px) and (max-width: 1200px)
+{
+   .container{
+     background-color: darkmagenta;
+   }
+}
+ 
